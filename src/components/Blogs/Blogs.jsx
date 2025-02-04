@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
 
 
+// eslint-disable-next-line react/prop-types
 const Blogs = ({handleAddBookmark}) => {
 
     const[blogs,setBlogs]=useState([]);
