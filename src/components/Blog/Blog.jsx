@@ -4,7 +4,7 @@ import { FaBookmark } from 'react-icons/fa';
 
 
 
-const Blog = ({blog}) => {
+const Blog = ({blog,handleAddBookmark}) => {
     const {title,cover,author,author_img,posted_date,reading_time,hashtags,id}=blog
     return (
         <div className='  mb-20 mt-10'>
@@ -23,7 +23,7 @@ const Blog = ({blog}) => {
                 
                 <div>
                   <span >{reading_time} min read</span>
-                  <button className=' ml-2 text-red-600 text-2xl'><FaBookmark></FaBookmark ></button>
+                  <button className=' ml-2 text-red-600 text-2xl' onClick={handleAddBookmark}><FaBookmark></FaBookmark ></button>
                 </div>
 
             </div>
